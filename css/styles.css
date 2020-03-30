@@ -1,0 +1,292 @@
+/* ============================ FONTS ===============================*/
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel");
+
+/* =========================== VARIABLES ========================*/
+:root {
+  /*colors*/
+  --clr-primary: #ec4c4c;
+  --clr-primary-dark: #880d1e;
+  --clr-primary-light: #f26a8d;
+  --clr-primary-light2: #f49cbb;
+  --clr-secondary: #cbeef3;
+  --clr-grey-1: #102a42;
+  --clr-grey-5: #617d98;
+  --clr-grey-10: #f1f5f8;
+  --clr-white: #fff;
+
+  /*fonts*/
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Grand Hotel", cursive;
+
+  /**/
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+}
+
+/*=======================Global CSS====================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  background: rgba(244, 156, 187, 0.1);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+@media screen and (min-width: 800px) {
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+}
+
+/*=======================HEADER====================================*/
+
+header {
+  min-height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/header.jpeg") center/cover no-repeat fixed;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+
+.header-title {
+  color: var(--clr-grey-10);
+  font-weight: 700;
+  margin: auto;
+}
+
+.header-title h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-family: var(--ff-primary);
+  font-weight: 700;
+  text-shadow: 3px 3px var(--clr-primary-light2);
+}
+
+.header-title h1 {
+  font-size: 6rem;
+  color: var(--clr-primary);
+  text-shadow: 2px 5px black;
+  font-weight: 700;
+  font-family: var(--ff-secondary);
+}
+
+.btn-header {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: var(--spacing);
+  padding: 1rem;
+  color: var(--clr-primary);
+  border-color: var(--clr-primary);
+  transition: var(--transition);
+}
+
+.btn-header:hover {
+  background-color: var(--clr-primary);
+  color: white;
+  border: none;
+}
+
+.content-divider {
+  height: 6px;
+  background: linear-gradient(
+    to left,
+    var(--clr-primary-light2),
+    var(--clr-primary),
+    var(--clr-primary-light2)
+  );
+}
+
+/*=======================Sobre Nos====================================*/
+
+.card {
+  height: 100%;
+}
+
+.card-img-top {
+  width: 25%;
+  min-width: 200px;
+  margin: auto;
+}
+
+.card-title {
+  color: var(--clr-primary-dark);
+  font-weight: 700;
+}
+
+.card-text {
+  font-family: var(--ff-primary);
+  color: var(--clr-grey-5);
+}
+
+.btn-sobre {
+  background-color: var(--clr-primary);
+  border-color: var(--clr-primary);
+}
+
+.btn-sobre:hover {
+  background-color: var(--clr-primary-dark);
+  border-color: var(--clr-primary);
+}
+
+/*=======================Atividades====================================*/
+
+.section-title {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.section-title h1 {
+  font-family: var(--ff-primary);
+  color: var(--clr-primary);
+  text-shadow: 3px 3px var(--clr-primary-light2);
+  font-weight: 700;
+}
+.section-title h2 {
+  font-family: var(--ff-secondary);
+  color: var(--clr-primary);
+}
+
+.atv-card {
+  background-color: #eee1e1;
+  border-radius: var(--radius);
+  box-shadow: 0 5px 15px rgb(0, 0, 0, 0.1);
+  transition: var(--transition);
+}
+
+.atv-card:hover {
+  box-shadow: 0 5px 15px rgb(0, 0, 0, 0.2);
+  transform: scale(1.01);
+}
+
+.atv-info {
+  text-align: center;
+  padding-top: 4rem;
+  padding: 3rem 1rem 2.5rem 1rem;
+}
+
+.atv-image {
+  height: 17rem;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.atv-info h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--clr-primary-dark);
+}
+
+.atv-info p {
+  color: var(--clr-grey-5);
+  max-width: 20rem;
+  margin: 1rem auto;
+}
+
+/* ==========================================footer======================================== */
+footer {
+  padding: 2rem 0rem;
+  background-color: #222;
+  text-align: center;
+  z-index: 5;
+}
+
+.social-icon {
+  color: var(--clr-white);
+  font-size: 2rem;
+  margin-right: 1rem;
+  transition: var(--transition);
+}
+
+.social-icon:hover {
+  color: var(--clr-primary);
+  transform: scale(1.2);
+}
+
+.footer-text {
+  margin-top: 1.25rem;
+  color: var(--clr-white);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.company {
+  text-transform: none;
+  color: var(--clr-primary);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
