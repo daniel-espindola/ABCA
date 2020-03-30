@@ -1,0 +1,172 @@
+/* ============================ FONTS ===============================*/
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel");
+
+/* =========================== VARIABLES ========================*/
+:root {
+  /*colors*/
+  --clr-primary: #EC4C4C;
+  --clr-primary-dark: #880D1E;
+  --clr-primary-light: #F26A8D;
+  --clr-primary-light2: #F49CBB;
+  --clr-secondary: #CBEEF3;
+  --clr-grey-1: #102a42;
+  --clr-grey-5: #617d98;
+  --clr-grey-10: #f1f5f8;
+  --clr-white: #fff;
+
+  /*fonts*/
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: "Grand Hotel", cursive;
+
+  /**/
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+}
+
+/*=======================Global CSS====================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  background: rgba(244, 156, 187, 0.1);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+@media screen and (min-width: 800px) {
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+}
+
+/*=======================HEADER====================================*/
+
+header {
+  min-height: 30vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("header.jpeg") center/cover no-repeat fixed;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  max-width: 1110px;
+  width: 100%;
+  margin: auto;
+}
+
+.header-title {
+  color: var(--clr-grey-10);
+  font-weight: 700;
+  margin: auto;
+}
+
+.header-title h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-family: var(--ff-primary);
+  font-weight: 700;
+  text-shadow: 3px 3px var(--clr-primary-light2);
+}
+
+.header-title h1 {
+  font-size: 6rem;
+  color: var(--clr-primary);
+  text-shadow: 2px 5px black;
+  font-weight: 700;
+  font-family: var(--ff-secondary);
+}
+
+.clr-light {
+  background-color: var(--clr-primary-light);
+}
+
+.navbar-brand {
+  font-family: var(--ff-primary);
+  font-weight: 700;
+  color: var(--clr-grey-1) !important;
+}
+
+.nav-link {
+  font-size: 1.25rem;
+  padding-left: 0.5rem !important;
+  color: white !important;
+  margin: 0rem 1rem;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+  background-color: var(--clr-primary-light2);
+  border-radius: 1.5rem;
+  /* color: var(--clr-primary-dark) !important; */
+}
+
