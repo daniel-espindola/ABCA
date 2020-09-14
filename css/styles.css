@@ -49,7 +49,7 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 img {
@@ -88,6 +88,7 @@ p {
 }
 
 @media screen and (min-width: 800px) {
+
   h1,
   h2,
   h3,
@@ -172,12 +173,10 @@ header {
 
 .content-divider {
   height: 6px;
-  background: linear-gradient(
-    to left,
-    var(--clr-primary-light2),
-    var(--clr-primary),
-    var(--clr-primary-light2)
-  );
+  background: linear-gradient(to left,
+      var(--clr-primary-light2),
+      var(--clr-primary),
+      var(--clr-primary-light2));
 }
 
 /*=======================Sobre Nos====================================*/
@@ -225,6 +224,7 @@ header {
   text-shadow: 3px 3px var(--clr-primary-light2);
   font-weight: 700;
 }
+
 .section-title h2 {
   font-family: var(--ff-secondary);
   color: var(--clr-primary);
@@ -280,6 +280,7 @@ footer {
   margin-right: 1rem;
   transition: var(--transition);
 }
+
 
 .social-icon:hover {
   color: var(--clr-primary);
